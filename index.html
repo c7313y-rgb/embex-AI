@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Embex Education | 生成AI研修 講座ライブラリー</title>
+  <meta name="description" content="Embex Educationの生成AI研修講座を体系的・視覚的に比較できる提案支援アプリ" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Noto+Sans+JP:wght@400;500;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="page-shell">
+    <header class="hero section">
+      <div class="hero-copy">
+        <div class="hero-topline"><div class="eyebrow">Embex Education / Proposal Navigator</div><div class="demo-badge">DEMO</div></div>
+        <h1>顧客企業が選びやすい<br>生成AI研修の講座ライブラリー</h1>
+        <p>
+          講座を<strong>対象者・難易度・導入目的・利用基盤</strong>で再編成し、
+          営業現場でそのまま提案に使えるUIに仕上げました。
+          PDF掲載の13講座をベースに、講座説明・ゴール・推奨企業像・プログラム要素を整理しています。
+        </p>
+        <div class="hero-actions">
+          <a href="#catalog" class="btn btn-primary">講座を探す</a>
+          <button id="copyProposalBtn" class="btn btn-secondary" type="button">提案メモをコピー</button>
+        </div>
+        <div class="hero-pills">
+          <span>全13講座を体系化</span>
+          <span>受講企業の選定を高速化</span>
+          <span>導入相談から提案まで直結</span>
+          <span>AI人材育成ロードマップ化</span>
+        </div>
+        <figure class="hero-visual-card">
+          <img src="hero-photo-ai.jpg" alt="AI活用を前提に会議するビジネスチームの写真ビジュアル" class="hero-visual-image" />
+          <figcaption>AI活用後の業務効率イメージを、営業提案の冒頭で直感的に伝えるヒーロービジュアル。</figcaption>
+        </figure>
+      </div>
+      <div class="hero-panel card glass">
+        <div class="hero-grid">
+          <div>
+            <div class="stat-value">13</div>
+            <div class="stat-label">講座ラインナップ</div>
+          </div>
+          <div>
+            <div class="stat-value">5</div>
+            <div class="stat-label">主要カテゴリ</div>
+          </div>
+          <div>
+            <div class="stat-value">3</div>
+            <div class="stat-label">難易度帯</div>
+          </div>
+          <div>
+            <div class="stat-value">4</div>
+            <div class="stat-label">選定軸</div>
+          </div>
+        </div>
+        <div class="hero-map">
+          <div class="map-head">
+            <span>ビジネス</span>
+            <span>テクニカル</span>
+          </div>
+          <div class="map-box">
+            <span class="map-y top">高度</span>
+            <span class="map-y bottom">入門</span>
+            <div class="dot business intro">①</div>
+            <div class="dot business intro m365">②</div>
+            <div class="dot business mid">③</div>
+            <div class="dot business mid google">④</div>
+            <div class="dot business mid excel">⑤</div>
+            <div class="dot business mid pm">⑥</div>
+            <div class="dot technical mid gemini">⑦</div>
+            <div class="dot technical mid dify">⑧</div>
+            <div class="dot technical mid cursor">⑨</div>
+            <div class="dot technical mid copilot">⑩</div>
+            <div class="dot technical mid claude">⑪</div>
+            <div class="dot technical high sdd">⑫</div>
+            <div class="dot technical high lc">⑬</div>
+          </div>
+          <div class="map-legend map-legend-table">
+            <div class="legend-head">分布図番号 対応表</div>
+            <div class="legend-table">
+              <div class="legend-item"><span class="legend-no">①</span><span class="legend-course">生成AI活用ワークショップ</span></div>
+              <div class="legend-item"><span class="legend-no">②</span><span class="legend-course">Microsoft 365 Copilot活用ワークショップ</span></div>
+              <div class="legend-item"><span class="legend-no">③</span><span class="legend-course">Microsoft 365 Copilot／Copilot Studio 業務自動化とAIエージェント構築WS</span></div>
+              <div class="legend-item"><span class="legend-no">④</span><span class="legend-course">Google Workspace × Gemini 業務自動化とAIエージェント構築WS</span></div>
+              <div class="legend-item"><span class="legend-no">⑤</span><span class="legend-course">Excel × AIエージェントによるデータ処理業務効率化WS</span></div>
+              <div class="legend-item"><span class="legend-no">⑥</span><span class="legend-course">データAIPM ワークショップ</span></div>
+              <div class="legend-item"><span class="legend-no">⑦</span><span class="legend-course">Geminiで加速するアイデアの具現化 実践AIアプリ開発ワークショップ</span></div>
+              <div class="legend-item"><span class="legend-no">⑧</span><span class="legend-course">Dify活用ワークショップ</span></div>
+              <div class="legend-item"><span class="legend-no">⑨</span><span class="legend-course">AIコーディングエージェント Cursor入門ワークショップ</span></div>
+              <div class="legend-item"><span class="legend-no">⑩</span><span class="legend-course">AIコーディングエージェント GitHub Copilot入門ワークショップ</span></div>
+              <div class="legend-item"><span class="legend-no">⑪</span><span class="legend-course">AIコーディングエージェント Claude Code入門ワークショップ</span></div>
+              <div class="legend-item"><span class="legend-no">⑫</span><span class="legend-course">GitHub Copilotによる仕様駆動開発（SDD）の実践ワークショップ</span></div>
+              <div class="legend-item"><span class="legend-no">⑬</span><span class="legend-course">PythonとLangChain/LangGraphによるAIエージェント構築ワークショップ</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="section info-band">
+        <div class="info-card card">
+          <img src="info-selection.jpg" alt="研修候補を検討するリアルなAI活用シーン" class="info-image" />
+          <div class="info-title">選ばれる理由</div>
+          <ul>
+            <li>年間100回超の登壇実績</li>
+            <li>現場経験のある講師が実務目線で解説</li>
+            <li>業種・業務・レベルに応じてカスタマイズ可能</li>
+            <li>個人ワーク、グループワーク、成果発表を重視</li>
+          </ul>
+        </div>
+        <div class="info-card card">
+          <img src="info-proposal.jpg" alt="AI研修提案を進めるリアルな商談シーン" class="info-image" />
+          <div class="info-title">実施までの流れ</div>
+          <ol>
+            <li>お問い合わせ</li>
+            <li>ヒアリング（30〜60分）</li>
+            <li>ご提案・お見積り</li>
+            <li>研修実施・フォローアップ提案</li>
+          </ol>
+        </div>
+        <div class="info-card card emphasis">
+          <img src="info-mastery.jpg" alt="AIスキル習得後の成長イメージを表現したリアルなビジネスシーン" class="info-image" />
+          <div class="info-title">受講後に描けるAI人材像</div>
+          <ul>
+            <li>基礎から開発までの受講ロードマップを見える化</li>
+            <li>講座比較と推奨候補の提示</li>
+            <li>受講数が増えるほどAI理解が深まる期待感を訴求</li>
+            <li>営業現場でそのまま見せられる提出用UI</li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="advisor" class="section advisor-grid">
+        <div class="card advisor-card">
+          <div class="section-heading">
+            <div>
+              <div class="kicker">Quick Advisor</div>
+              <h2>おすすめ講座診断</h2>
+            </div>
+            <p>顧客の利用環境・対象者・到達目標を入力すると、推奨講座を上位表示します。</p>
+          </div>
+          <div class="advisor-form">
+            <label>
+              <span>利用基盤</span>
+              <select id="envSelect">
+                <option value="">指定なし</option>
+                <option value="Microsoft">Microsoft 365中心</option>
+                <option value="Google">Google Workspace中心</option>
+                <option value="Developer Tools">開発ツール中心</option>
+                <option value="Mixed">複数混在</option>
+                <option value="汎用生成AI">まだ未定 / 汎用ツール中心</option>
+              </select>
+            </label>
+            <label>
+              <span>主な受講者</span>
+              <select id="audienceSelect">
+                <option value="">指定なし</option>
+                <option value="非エンジニア">非エンジニア</option>
+                <option value="ビジネス職">ビジネス職</option>
+                <option value="DX推進">DX推進</option>
+                <option value="PM">PM / 管理職</option>
+                <option value="開発者">開発者</option>
+              </select>
+            </label>
+            <label>
+              <span>導入目的</span>
+              <select id="goalSelect">
+                <option value="">指定なし</option>
+                <option value="基礎定着">まずは基礎理解</option>
+                <option value="業務効率化">業務効率化</option>
+                <option value="AIエージェント">AIエージェント構築</option>
+                <option value="アプリ開発">AIアプリ開発</option>
+                <option value="開発生産性">開発生産性向上</option>
+                <option value="仕様駆動">仕様駆動開発</option>
+                <option value="AI実装">AI実装・内製化</option>
+                <option value="PoC">PoC企画・推進</option>
+              </select>
+            </label>
+            <label>
+              <span>希望難易度</span>
+              <select id="levelSelect">
+                <option value="">指定なし</option>
+                <option value="入門">入門</option>
+                <option value="中級">中級</option>
+                <option value="上級">上級</option>
+              </select>
+            </label>
+          </div>
+          <div class="advisor-actions">
+            <button id="runDiagnosisBtn" class="btn btn-primary" type="button">診断する</button>
+            <button id="resetDiagnosisBtn" class="btn btn-ghost" type="button">リセット</button>
+          </div>
+          <div id="diagnosisResult" class="diagnosis-result empty">条件を選ぶと、おすすめ上位3講座を表示します。</div>
+        </div>
+
+        <div class="card compare-card">
+          <div class="section-heading">
+            <div>
+              <div class="kicker">Compare</div>
+              <h2>比較候補</h2>
+            </div>
+            <p>気になる講座を最大3件まで比較できます。</p>
+          </div>
+          <div id="compareEmpty" class="compare-empty">講座カードの「比較に追加」を押してください。</div>
+          <div id="compareTableWrap" class="compare-table-wrap hidden"></div>
+        </div>
+      </section>
+
+      <section id="catalog" class="section catalog-section">
+        <div class="section-heading stack-on-mobile">
+          <div>
+            <div class="kicker">Course Library</div>
+            <h2>講座一覧</h2>
+          </div>
+          <p>顧客企業の状況に合わせて横断検索・絞り込み・比較ができます。</p>
+        </div>
+
+        <div class="card filter-panel">
+          <div class="filter-top">
+            <label class="search-box">
+              <span class="sr-only">検索</span>
+              <input id="searchInput" type="text" placeholder="講座名・対象者・ツール・目的で検索" />
+            </label>
+            <div class="preset-wrap" id="presetWrap"></div>
+          </div>
+          <div class="filter-grid">
+            <div>
+              <div class="filter-label">難易度</div>
+              <div id="levelChips" class="chip-row"></div>
+            </div>
+            <div>
+              <div class="filter-label">カテゴリ</div>
+              <div id="categoryChips" class="chip-row"></div>
+            </div>
+            <div>
+              <div class="filter-label">利用基盤</div>
+              <div id="platformChips" class="chip-row"></div>
+            </div>
+            <div>
+              <div class="filter-label">対象者</div>
+              <div id="audienceChips" class="chip-row"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="catalog-layout">
+          <div>
+            <div class="results-head">
+              <div><strong id="resultCount">0</strong> 件の講座</div>
+              <div class="view-note">クリックすると右側に詳細表示</div>
+            </div>
+            <div id="courseGrid" class="course-grid"></div>
+          </div>
+          <aside class="detail-panel card" id="detailPanel">
+            <div class="detail-empty">左の講座を選択すると、ここに講座詳細が表示されます。</div>
+          </aside>
+        </div>
+      </section>
+    </main>
+  </div>
+    <footer class="section footer-card card">
+      <div>
+        <div class="kicker">Embex Education</div>
+        <h3>営業提出版デモ | 生成AI研修 講座ライブラリー</h3>
+        <p>提案先企業が講座を比較・選定しやすいよう、講座体系とAI活用到達像を一画面で整理した営業用デモです。</p>
+      </div>
+      <div class="footer-meta">
+        <div><strong>会社名：</strong>エンベックスエデュケーション</div>
+        <div><strong>Web：</strong><a href="https://www.embex-edu.com/" target="_blank" rel="noopener noreferrer">https://www.embex-edu.com/</a></div>
+        <div><strong>用途：</strong>顧客提案・講座紹介・初回診断デモ</div>
+        <div><strong>備考：</strong>DEMO版のため問い合わせ先は営業担当差し込み前提</div>
+      </div>
+    </footer>
+
+  <script src="courses.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
